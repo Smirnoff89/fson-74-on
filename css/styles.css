@@ -17,6 +17,20 @@ body {
     list-style: none;
 }
 
+.btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--accent-color);
+}
+
 /* --------HEADER-------- */
 
 header {
@@ -45,18 +59,28 @@ header {
 }
 
 .header-btn {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    color: #303030;
 }
 
-.header-btn:hover,
-.header-btn:focus {
-    background-color: var(--accent-color);
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+}
+
+.after-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
 }
 
 /* --------HERO-------- */
@@ -66,18 +90,10 @@ header {
 }
 
 .sub-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6);
 }
 
-.title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 72px;
-    line-height: 1.18;
-    letter-spacing: 0.05em;
+.hero-title {
     color: var(--second-header-color);
 }
 
@@ -98,31 +114,20 @@ header {
 
 .hero-links:hover,
 .hero-links:focus {
-    color: #FF6C00;
+    color: var(--accent-color);
 }
 
 /* --------ABOUT-------- */
 
 .about-pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    text-transform: uppercase;
     color: #303030;
 }
 
 .about-title {
-    font-family: 'Raleway' sans-serif;
-    font-size: 42px;
-    line-height: 0.88;
-    letter-spacing: 0.05em;
     color: var(--primary-header-color);
 }
 
 .about-after-title {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
     color: #555555;
 }
 
@@ -134,15 +139,62 @@ header {
 }
 
 .about-btn {
-    font-family: inherit font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
     color: #303030;
 }
 
 .about-btn:hover,
 .about-btn:focus {
     background-color: var(--accent-color);
+}
+
+/* --------PRICES-------- */
+
+.prices-pre-title {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+    color: var(--second-header-color)
+}
+
+.prices-elem {
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.price-btn {
+    color: #ffffff;
+}
+
+/* --------BENEFITS-------- */
+
+.benefits-items > span {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+
+.benefits-items > sup {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.benefits-pre-title {
+    color: #303030;
+}
+
+.benefits-title {
+    color: #303030;
+}
+
+.benefits-after-title {
+    color: #555555;
 }
