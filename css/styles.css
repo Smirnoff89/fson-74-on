@@ -156,10 +156,6 @@ header {
     color: #303030;
 }
 
-.about-btn:hover,
-.about-btn:focus {
-    background-color: var(--accent-color);
-}
 
 /* --------PRICES-------- */
 
@@ -302,4 +298,9 @@ header {
     ine-height: 1.36;
     letter-spacing: 0.2em;
     color: #303030;
+}
+
+.footer-links:hover,
+.footer-links:focus {
+    color: var(--accent-color);
 }
