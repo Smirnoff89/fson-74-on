@@ -3,11 +3,15 @@
     --second-header-color: #ffffff;
     --primary-link-color: #ffffff;
     --accent-color: #FF6C00;
+
+    --main-font: 'Open Sans', sans-serif;
 }
 
 body {
-    font-family: 'Open Sans' sans-serif;
+    font-family: var(--main-font)
 }
+
+/* --------UNIVERSAL-CLASSES-------- */
 
 .link {
     text-decoration: none;
@@ -29,6 +33,37 @@ body {
 .btn:hover,
 .btn:focus {
     background-color: var(--accent-color);
+}
+
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+}
+
+.after-title {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /* --------HEADER-------- */
@@ -59,34 +94,13 @@ header {
 }
 
 .header-btn {
-    color: #303030;
-}
-
-.pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    text-transform: uppercase;
-}
-
-.title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 72px;
-    line-height: 1.18;
-    letter-spacing: 0.05em;
-}
-
-.after-title {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
+    color: #ffffff;
 }
 
 /* --------HERO-------- */
 
 .hero {
-    background-color: gray;
+    background-color: #737373;
 }
 
 .sub-title {
@@ -104,7 +118,7 @@ header {
     color: #9DA4BD;
 }
 
-.hero-list {
+.hero-links {
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -192,9 +206,31 @@ header {
 }
 
 .benefits-title {
-    color: #303030;
+    color: var(--primary-header-color);
 }
 
 .benefits-after-title {
     color: #555555;
 }
+
+/* -----------BARBERS----------- */
+
+.barbers-pre-title {
+    color: #303030;
+}
+
+.barbers-title {
+    color: var(--primary-header-color);
+}
+
+.barbers-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #303030;
+}
+
+.barbers-info {
+    font-size: 14px;
