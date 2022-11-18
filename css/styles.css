@@ -234,3 +234,72 @@ header {
 
 .barbers-info {
     font-size: 14px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.02em;
+    columns: var(--accent-color);
+}
+
+/* -----------GALLERY----------- */
+
+.gallery-pre-title {
+    color: #303030;
+}
+
+/* -----------FORM----------- */
+
+.form-title {
+    columns: var(--primary-header-color);
+}
+
+/* -----------CONTACTS----------- */
+
+.contacts {
+    background-color: #303030;
+}
+
+.contacts-title {
+    color: var(--second-header-color);
+}
+
+.contacts-links {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.contacts-address {
+    font-weight: 700;
+}
+
+.contacts-pre-title {
+    color: #ffffff;
+}
+
+.contacts-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+/* -----------FOOTER----------- */
+
+.footer-copy {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #9DA4BD;
+}
+
+.footer-links {
+    font-weight: 600;
+    font-size: 11px;
+    ine-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
