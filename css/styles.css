@@ -7,11 +7,30 @@
     --main-font: 'Open Sans', sans-serif;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+ul, ol {
+    margin: 0px;
+    padding-left: 0px;
+}
+
+button {
+    cursor: pointer;
+}
+
 body {
     font-family: var(--main-font)
 }
 
 /* --------UNIVERSAL-CLASSES-------- */
+
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
 
 .link {
     text-decoration: none;
@@ -70,6 +89,11 @@ body {
 
 header {
     background-color: gray;
+}
+
+.header-logo {
+    padding: 32px 0;
+    display: block;
 }
 
 .header-link {
