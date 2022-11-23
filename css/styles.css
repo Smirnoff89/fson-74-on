@@ -97,13 +97,23 @@ header {
     background-color: gray;
 }
 
-.hero-right {
-    padding: 184px 526px 208px 100px;
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
 }
 
 .header-logo {
     padding: 32px 0;
     display: block;
+    margin-right: 130px;
+}
+
+.header-cont {
+    margin-left: auto;
 }
 
 .header-link {
@@ -112,6 +122,10 @@ header {
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--primary-link-color);
+}
+
+.header-list > li:not(:last-child) {
+    margin-right: 30px;
 }
 
 .header-link:hover,
@@ -129,12 +143,32 @@ header {
 
 .header-btn {
     color: #ffffff;
+    margin-left: 40px;
+    border: 1px solid var(--accent-color);
+    background-color: transparent;
+    border-radius: 25px;
+    height: 40px;
+    min-width: 160px;
 }
 
 /* --------HERO-------- */
 
 .hero {
     background-color: #737373;
+}
+
+.hero .container {
+    display: flex;
+}
+
+.hero-right {
+    padding: 184px 526px 208px 100px;
+    flex-grow: 1;
+}
+
+.hero-list {
+    width: 100px;
+
 }
 
 .pre-title {
@@ -179,7 +213,24 @@ header {
     margin-bottom: var(--main-margin);
 }
 
+.about-wrap {
+    margin-left: 30px;
+}
+
+.about .container {
+    display: flex;
+}
+
+.list-about {
+    display: flex;
+}
+
+.about-items:not(:last-child) {
+    margin-right: 30px;
+}
+
 .about-title {
+    font-size: 42px;
     color: var(--primary-header-color);
     margin-bottom: var(--main-margin);
 }
