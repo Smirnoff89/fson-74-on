@@ -53,6 +53,11 @@ img {
     line-height: 1.33;
     letter-spacing: 0.09em;
     text-transform: uppercase;
+    border: 1px solid var(--accent-color);
+    background-color: transparent;
+    border-radius: 25px;
+    height: 40px;
+    min-width: 160px;
 }
 
 .btn:hover,
@@ -144,11 +149,7 @@ header .container {
 .header-btn {
     color: #ffffff;
     margin-left: 40px;
-    border: 1px solid var(--accent-color);
-    background-color: transparent;
-    border-radius: 25px;
-    height: 40px;
-    min-width: 160px;
+
 }
 
 /* --------HERO-------- */
@@ -269,13 +270,26 @@ header .container {
     margin-bottom: 44px;
 }
 
+.prices-list-wrap {
+    display: flex;
+    gap: 30px;
+
+}
+
 .prices-list {
     border: 1px solid #303030;
     padding: 30px 20px;
+    flex-grow: 1;
 }
 
 .prices-items {
     margin-bottom: var(--main-margin);
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices-items:last-child {
+    margin-bottom: 0px;
 }
 
 .prices-elem {
@@ -296,6 +310,20 @@ header .container {
 
 .benefits {
     padding: 120px 0px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+}
+
+.benefits-items:nth-child(2n+1) {
+    margin-right: 30px;   
+}
+
+.benefits-items:nth-child(2n) {
+    margin-top: 30px;
 }
 
 .benefits-items > span {
@@ -354,13 +382,25 @@ header .container {
     margin-bottom: 44px;
 }
 
+.barbers-list {
+    display: flex;
+}
+
+.barbers-items:not(:last-child) {
+    margin-right: 30px;
+}
+
+.barbers-items {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
 .barbers-name {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.38;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #303030;
+    color: var(--primary-header-color);
     margin-top: 30px;
     margin-bottom: 8px;
 }
@@ -370,13 +410,26 @@ header .container {
     line-height: 1.35;
     text-align: center;
     letter-spacing: 0.02em;
-    columns: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* -----------GALLERY----------- */
 
 .gallery {
     padding: 120px 0px;
+}
+
+.gallery-list {
+    display: flex; 
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.gallery-items {
+    width: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 .gallery-pre-title {
